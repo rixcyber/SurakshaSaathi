@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ସୁରକ୍ଷା ସାଥୀ</string>
+    <string name="app_tagline">ଆପଣଙ୍କ ସୁରକ୍ଷା ସାଥୀ</string>
+    <string name="home_prompt">ଆପଣଙ୍କର କୌଣସି ସନ୍ଦେହ ଅଛି କି?\nସୁରକ୍ଷିତ କି ନାହିଁ ଜାଣିବାକୁ ତଳେ ଟ୍ୟାପ୍ କରନ୍ତୁ।</string>
+    <string name="call_shield">କଲ୍ ସୁରକ୍ଷା</string>
+    <string name="call_shield_desc">କଲ୍ ସୁରକ୍ଷିତ କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="message_shield">ମେସେଜ୍ ସୁରକ୍ଷା</string>
+    <string name="message_shield_desc">ମେସେଜ୍ ସୁରକ୍ଷିତ କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="link_shield">ଲିଙ୍କ୍ ସୁରକ୍ଷା</string>
+    <string name="link_shield_desc">ଲିଙ୍କ୍ ସୁରକ୍ଷିତ କି ନାହିଁ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="app_shield">ଆପ୍ ସୁରକ୍ଷା</string>
+    <string name="app_shield_desc">ବିପଦଜନକ ରିମୋଟ୍ ଆପ୍ସ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="qr_shield">QR ଓ ପେମେଣ୍ଟ୍ ସୁରକ୍ଷା</string>
+    <string name="qr_shield_desc">UPI ଅନୁରୋଧ ଓ QR କୋଡ୍ ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="ask_family">ପରିବାରକୁ ପଚାରନ୍ତୁ</string>
+    <string name="fraud_help">ଠକେଇ ସହାୟତା</string>
+    <string name="verdict_stop">ଅଟକନ୍ତୁ (STOP)</string>
+    <string name="verdict_verify">ଯାଞ୍ଚ କରନ୍ତୁ (VERIFY)</string>
+    <string name="verdict_proceed">ସାବଧାନତାର ସହ ଆଗକୁ ବଢ଼ନ୍ତୁ</string>
+
+    <!-- Voice Guidance strings -->
+    <string name="voice_guidance_title">ସ୍ୱର ସହାୟତା</string>
+    <string name="listen_voice_advice">ସ୍ୱରରେ ପରାମର୍ଶ ଶୁଣନ୍ତୁ</string>
+    <string name="stop_voice">ସ୍ୱର ବନ୍ଦ କରନ୍ତୁ</string>
+    <string name="ask_saathi_title">ସାଥୀଙ୍କୁ ପଚାରନ୍ତୁ: ଏହା ସୁରକ୍ଷିତ କି?</string>
+    <string name="ask_saathi_subtitle">କହି କିମ୍ବା ତଳେ ଟ୍ୟାପ୍ କରି ଯାଞ୍ଚ କରନ୍ତୁ</string>
+    <string name="tap_to_speak">ମାଇକ୍ ଦବାଇ କୁହନ୍ତୁ</string>
+    <string name="listening">ଶୁଣୁଛି…</string>
+    <string name="language_select">ଭାଷା</string>
+</resources>

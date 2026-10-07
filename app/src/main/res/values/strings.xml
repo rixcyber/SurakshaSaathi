@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Suraksha Saathi</string>
+    <string name="app_tagline">Your Safety Companion</string>
+    <string name="home_prompt">Are you unsure about something?\nTap below to check if it is safe.</string>
+    <string name="call_shield">Call Protection</string>
+    <string name="call_shield_desc">Check if a call is safe</string>
+    <string name="message_shield">Message Protection</string>
+    <string name="message_shield_desc">Check if a message is safe</string>
+    <string name="link_shield">Link Protection</string>
+    <string name="link_shield_desc">Check if a link is safe</string>
+    <string name="app_shield">App Protection</string>
+    <string name="app_shield_desc">Check for dangerous remote apps</string>
+    <string name="qr_shield">QR &amp; Payment Protection</string>
+    <string name="qr_shield_desc">Verify UPI requests &amp; QR codes</string>
+    <string name="ask_family">Ask Family</string>
+    <string name="fraud_help">Fraud Help</string>
+    <string name="verdict_stop">STOP</string>
+    <string name="verdict_verify">VERIFY</string>
+    <string name="verdict_proceed">PROCEED CAREFULLY</string>
+
+    <!-- Voice Guidance strings -->
+    <string name="voice_guidance_title">Voice Guidance</string>
+    <string name="listen_voice_advice">Listen to Safety Advice</string>
+    <string name="stop_voice">Stop Voice</string>
+    <string name="ask_saathi_title">Ask Saathi: Is This Safe?</string>
+    <string name="ask_saathi_subtitle">Speak or tap below to check any situation</string>
+    <string name="tap_to_speak">Tap mic and speak</string>
+    <string name="listening">Listening…</string>
+    <string name="language_select">Language</string>
+</resources>

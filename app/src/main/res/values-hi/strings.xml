@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">सुरक्षा साथी</string>
+    <string name="app_tagline">आपका सुरक्षा साथी</string>
+    <string name="home_prompt">क्या आपको किसी चीज़ पर शक है?\nजांचने के लिए नीचे दबाएं।</string>
+    <string name="call_shield">कॉल सुरक्षा</string>
+    <string name="call_shield_desc">जांचें कि कॉल सुरक्षित है या नहीं</string>
+    <string name="message_shield">संदेश सुरक्षा</string>
+    <string name="message_shield_desc">जांचें कि मैसेज सुरक्षित है या नहीं</string>
+    <string name="link_shield">लिंक सुरक्षा</string>
+    <string name="link_shield_desc">जांचें कि लिंक सुरक्षित है या नहीं</string>
+    <string name="app_shield">ऐप सुरक्षा</string>
+    <string name="app_shield_desc">खतरनाक रिमोट ऐप्स की जांच करें</string>
+    <string name="qr_shield">QR व भुगतान सुरक्षा</string>
+    <string name="qr_shield_desc">UPI अनुरोध और QR कोड सत्यापित करें</string>
+    <string name="ask_family">परिवार से पूछें</string>
+    <string name="fraud_help">धोखाधड़ी सहायता</string>
+    <string name="verdict_stop">रुकें (STOP)</string>
+    <string name="verdict_verify">जांचें (VERIFY)</string>
+    <string name="verdict_proceed">सावधानी से आगे बढ़ें</string>
+
+    <!-- Voice Guidance strings -->
+    <string name="voice_guidance_title">आवाज़ में सहायता</string>
+    <string name="listen_voice_advice">सलाह सुनें (आवाज़)</string>
+    <string name="stop_voice">आवाज़ बंद करें</string>
+    <string name="ask_saathi_title">साथी से पूछें: क्या यह सुरक्षित है?</string>
+    <string name="ask_saathi_subtitle">बोलें या स्थिति जांचने के लिए नीचे टैप करें</string>
+    <string name="tap_to_speak">माइक दबाकर बोलें</string>
+    <string name="listening">सुन रहे हैं…</string>
+    <string name="language_select">भाषा</string>
+</resources>

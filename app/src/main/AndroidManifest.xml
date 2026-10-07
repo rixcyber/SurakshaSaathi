@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Network permissions for threat intelligence sync & reputation queries -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Notification permission (required on API 33+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Microphone permission for voice guidance / "Is This Safe?" assistant -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <queries>
+        <!-- Screen sharing & Remote Access Apps commonly misused by scammers -->
+        <package android:name="com.anydesk.anydeskandroid" />
+        <package android:name="com.teamviewer.quicksupport.market" />
+        <package android:name="com.teamviewer.host.market" />
+        <package android:name="com.rustdesk.rustdesk" />
+        <package android:name="com.sand.airdroid" />
+        <package android:name="com.splashtop.remote.pad.v2" />
+        <package android:name="com.aweray.sunlogin" />
+        <package android:name="com.realvnc.viewer.android" />
+        <package android:name="com.zoho.assist.client" />
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:windowSoftInputMode="adjustResize"
+        android:theme="@style/Theme.SurakshaSaathi">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ── Call Shield: system call-screening service ── -->
+        <service
+            android:name=".services.SurakshaCallScreeningService"
+            android:permission="android.permission.BIND_SCREENING_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService" />
+            </intent-filter>
+        </service>
+
+        <!-- ── Message Shield: notification listener service ── -->
+        <service
+            android:name=".services.ScamNotificationService"
+            android:label="Suraksha Saathi Message Guard"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- ── Notification action buttons receiver ── -->
+        <receiver
+            android:name=".services.NotificationActionReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.surakshasaathi.ACTION_ASK_FAMILY" />
+                <action android:name="com.example.surakshasaathi.ACTION_DISMISS" />
+                <action android:name="com.example.surakshasaathi.ACTION_OPEN_APP" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

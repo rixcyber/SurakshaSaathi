@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: suraksha_saathi_db
+    restart: always
+    environment:
+      POSTGRES_USER: suraksha_user
+      POSTGRES_PASSWORD: suraksha_secure_password
+      POSTGRES_DB: suraksha_threat_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    container_name: suraksha_saathi_api
+    restart: always
+    environment:
+      DATABASE_URL: postgresql://suraksha_user:suraksha_secure_password@db:5432/suraksha_threat_db
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
